@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="icon" href="img/logodeRyM.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Hanalei+Fill&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="contenedor">
+    <div class="nav">
+
+      <img id=rym src="img/logodeRyM.png" alt="Logo" />
+
+      <h1>RICK Y MORTY</h1>
+
+      <!--<img id="menu" src="img/menu.png" />-->
+    </div>
+  </header>
+  <div id="pagPrincipal">
+    <div class="cintaBienenvida">
+      <h3>BIENVENIDXS a la página para los más fans de Rick y Morty</h3>
+    </div>
+    <main class="conten">
+      <h2>¡Aquí podras ver y conocer a tus personajes favoritos, y todos los episodios de la serie!</h2>
+      <div class="subConten">
+        <h3><b>¿De qué se trata la serie?</b></h3>
+        <p>
+          Rick y Morty es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y
+          Dan Harmon. La serie sigue las aventuras de un científico, Rick, y su inocente nieto Morty, quienes pasan el
+          tiempo entre la rutina de una típica familia y las aventuras intergalácticas.
+        </p>
+      </div>
+      <img src="img/imgRick.png" alt="imagen" id="imgRick" />
+    </main>
+  </div>
+  <section>
+    <div id="botones">
+      <button id="btnPers" type="button">PERSONAJES</button>
+      <br>
+      <br>
+      <br>
+    </div>
+    <!-- <div>
+ <button id="btnEpis" type="button">EPISODIOS</button>
+  </div>-->
+    <div>
+      <br>
+      <button id="filtrarAlfab" type="button">Ver por orden alfabetico</button>
+      <button id="btnRegresar" type="button">Regresar</button>
+    </div>
+  </section>
+  <br>
+  <div id="contenedorResultados"></div>
+  <div id="contenedorResultados1"></div>
+  <div class=""></div>
+  <div class=""></div>
+
+  <div id="cardPers"></div>
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
