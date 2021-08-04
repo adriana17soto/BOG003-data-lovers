@@ -1,0 +1,190 @@
+body {
+    background-color: rgba(128, 128, 128, 0.425);
+    margin: 0px;
+    }
+    .nav {
+        background: #000;
+        font-size: 20px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 80px;
+        padding: 40px;
+        margin: 0px;    
+    }
+    
+    #rym {
+        width: 130px; 
+        margin: 3px 10px 10px 11px;
+        position: absolute;
+     }
+    
+     
+    #menu {
+        width: 25px; 
+        margin: 3px 10px 10px 850px;
+        position: absolute;
+     }
+    
+     
+    h1 {
+        color: rgb(0, 247, 255); 
+        margin: 3px 10px 10px 160px;
+        position: absolute;
+        font-family: 'Creepster', cursive;
+        font-size: 80px;
+     }
+    
+    /*#pagPrincipal {
+      display: flex;
+       /* background: rgb(0, 255, 106);
+        color:000000;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;*/
+        
+    
+    .cintaBienenvida{
+      background: rgb(0, 255, 106);
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+    
+    }
+    #imgRick {
+        width: 450px; 
+        flex: auto;
+        margin: -180px 10px 10px 500px;
+        position: absolute;
+        display: flex;
+    
+    }
+    
+    .subConten {
+        
+        display: table;
+        height: 150px;
+        margin: 2rem;
+        text-align: center;
+        width: 450px;
+        
+    }
+    
+    .conten h2 {
+       font-size: 35px;
+        margin: 20px;
+        padding: 0 1rem;
+        top: 100px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    
+    .subContent p {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 1rem;
+        top: 50px;
+        vertical-align: middle;
+       
+    }
+    
+    #btnPers{
+        background: black;
+        color: white;
+        border: 0;
+        font-size: 16px;
+        padding: 10px 50px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 80px 10px 10px 400px;
+        position: absolute;
+        cursor: pointer;
+        box-shadow: 0 0.8rem 1.4rem 0 rgb(0, 247, 255);
+        transition: transform 150ms;
+        transform: scale(1.03);
+    
+    }
+      
+    /*#btnEpis{
+        background: #000;
+        color: white;
+        border: 0;
+        font-size: 16px;
+        margin: 10px;
+        padding: 10px 50px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 80px 10px 10px 700px;
+        position: absolute;
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 yellow;
+        transition: transform 150ms;
+        transform: scale(1.03);
+    }*/
+    
+    
+    
+    #btnRegresar{
+      background: #000;
+      color: white;
+      border: 0;
+      font-size: 16px;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 15px 10px 10px 600px;
+      position: absolute;
+      cursor: pointer;
+     /* box-shadow: 0 0.4rem 1.4rem 0 yellow;*/
+      transition: transform 150ms;
+      transform: scale(1.03);
+    }
+    
+    #filtrarAlfab{
+      background: #000;
+      color: white;
+      border: 0;
+      font-size: 16px;
+      margin: 10px;
+      padding: 10px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 15px 10px 10px 300px;
+      position: absolute;
+      cursor: pointer;
+     /* box-shadow: 0 0.4rem 1.4rem 0 yellow;*/
+      transition: transform 150ms;
+      transform: scale(1.03);
+    }
+    
+    .tarjetaPersonajes{
+      background: rgb(83, 214, 214);
+      border: 1px solid #000;
+      font-size: 16px;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: 150px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+      /*flex-flow: row wrap;*/
+      
+    }
+    #contenedorResultados{
+     display: flex;
+     flex-flow: row wrap;
+     padding: 50px 20px;
+      align-self: flex-end;
+    
+    }
+    
+    .estiloImg{
+      width: 100px;
+    }
