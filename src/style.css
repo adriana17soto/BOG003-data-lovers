@@ -16,14 +16,16 @@ body {
     #rym {
         width: 130px; 
         margin: 3px 10px 10px 11px;
-        position: absolute;
+        /*position: absolute;*/
+        display: inline-flex;
      }
     
      
     #menu {
         width: 25px; 
         margin: 3px 10px 10px 850px;
-        position: absolute;
+       /* position: absolute;*/
+        display: flex;
      }
     
      

@@ -39,7 +39,7 @@ btnRegresar.addEventListener("click", mostrarpantalla1);
 
 /*location.reload();*/
 
-const personajes = data.results
+/*const personajes = data.results*/
 const botonPersonajes = document.getElementById("btnPers");
 botonPersonajes.addEventListener("click", () =>{ 
   /*console.log("tocandoBotonPersonajes")*/
@@ -52,7 +52,7 @@ function verPersonajes(personajes) {
   /*document.getElementById("contenedorResultados").style.display = "block";*/
   contenedorResultados.innerHTML="";
   for (let i = 0; i < personajes.length; i++) {
-    let personaje = personajes[i]
+    /*let personaje = personajes[i]*/
     let nombre = personajes[i].name
     let especie = personajes[i].species
     let imag = personajes[i].image
@@ -90,7 +90,7 @@ function verPersonajes(personajes) {
 
     contenedorResultados.appendChild(tarjeta)
     /*console.log(tarjeta)*/
-    console.log(contenedorResultados)
+    /*console.log(contenedorResultados)*/
 
   }}
 
@@ -115,7 +115,7 @@ function filtrarPersonajes() {
       return 0;
     })
 
-   console.log(personajes0)
+   /*console.log(personajes0)*/
    verPersonajes(personajes0)
   /* document.getElementById('contenedorResultados').removeChild(tarjeta);*/
 
