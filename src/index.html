@@ -14,12 +14,14 @@
 <body>
   <header id="contenedor">
     <div class="nav">
-
-      <img id=rym src="img/logodeRyM.png" alt="Logo" />
-
+      <img id="rym" src="img/logodeRyM.png" alt="Logo" />
       <h1>RICK Y MORTY</h1>
-
-      <!--<img id="menu" src="img/menu.png" />-->
+      <button id="btnPers" type="button">VER PERSONAJES</button>
+      <img src="img/flecha.png"  id="btnRegresar" class="regresar" alt="flecha" />
+     <!-- <button id="btnRegresar" class="regresar" type="button" >Regresar</button>-->
+    </div>
+    <div>
+      
     </div>
   </header>
   <div id="pagPrincipal">
@@ -28,6 +30,7 @@
     </div>
     <main class="conten">
       <h2>¡Aquí podras ver y conocer a tus personajes favoritos, y todos los episodios de la serie!</h2>
+      <div class="reseña">
       <div class="subConten">
         <h3><b>¿De qué se trata la serie?</b></h3>
         <p>
@@ -37,25 +40,61 @@
         </p>
       </div>
       <img src="img/imgRick.png" alt="imagen" id="imgRick" />
+    </div>
     </main>
   </div>
-  <section>
-    <div id="botones">
-      <button id="btnPers" type="button">PERSONAJES</button>
+  <section id="botones">
       <br>
-      <br>
-      <br>
-    </div>
-    <!-- <div>
- <button id="btnEpis" type="button">EPISODIOS</button>
-  </div>-->
-    <div>
-      <br>
-      <button id="filtrarAlfab" type="button">Ver por orden alfabetico</button>
-      <button id="btnRegresar" type="button" onclick="location.reload()">Regresar</button>
+      <div>
+        <!--<button id="btnPers" type="button">PERSONAJES</button>-->
+        <br>
+      </div>
+      <div>
+        <button id="ordenarAlfab" class="a-z" type="button">Ver de A-Z</button>
+        <button id="ordenarAlfabZ" class="z-a" type="button">Ver de Z-A</button>
+      </div>
+        <div>
+          <br>
+       <!--- <button id="espec" class="especies" type="button">Ver por especie</button>-->
+        <select name="especie" class="especie" id="filtrarEspecies">
+          <option value="all">Especies</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+          <option value="Humanoid">Humanoid</option>
+          <option value="Poopybutthole">Poopybutthole</option>
+          <option value="Mytholog">Mytholog</option>
+          <option value="Animal">Animal</option>
+          <option value="Vampire">Vampire</option>
+          <option value="Robot">Robot</option>
+          <option value="Cronenberg">Cronenberg</option>
+          <option value="Disease">Disease</option>
+          <option value="Parasite">Parasite</option>
+          <option value="unknown">unknown</option>
+        </select>
+
+        <select name="genero" id="generoPers" class="genero">
+          <option value="todosGeneros">Genero</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>unknown</option>
+        </select>
       
+        <select name="status" id="statusPers" class="status">
+        <option value="todosEstatus">Status</option>  
+        <option>Alive</option>
+        <option>Dead</option>
+        <option>unknown</option>
+      </select>
     </div>
-  </section>
+    <br>
+    <div>
+       <!-- <button id="btnRegresar" class="regresar" type="button" >Regresar</button>-->
+       <!--- <input type="text" id="busqueda" class="form-busqueda">
+        <button class="btn-buscar" id="buscar">Buscar</button>-->
+        <br>
+        <br>
+      </div>
+    </section>
   <br>
   <div id="contenedorResultados"></div>
   <div id="contenedorResultados1"></div>
@@ -64,6 +103,7 @@
 
   <div id="cardPers"></div>
 
+  
   <script src="main.js" type="module"></script>
 </body>
 
