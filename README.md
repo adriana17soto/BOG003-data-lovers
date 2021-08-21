@@ -1,3 +1,64 @@
+# RICK Y MORTY
+
+## 1. Definición del producto
+
+Esta página web está diseñada principalmente para el fandom de la serie de televisión estadounidense de animación para adultos Rick and Morty. Los usuarios cuentan con una página responsive, de fácil interacción; en ella se podrán ver todos los personajes de la serie con sus respectivas características, ordenarlos por nombre de forma ascendente y descendente; así como interactuar filtrándolos según la especie, el género y el estatus. 
+
+## 2. Investigación UX
+
+Los principales usuarios del producto son televidentes de la serie que deseen conocer más acerca de cada personaje, o de sus personajes favoritos. 
+Según la investigación hecha los usuarios quieren ver una página donde encuentre la información detallada de la serie, además los nombre, características e imagen de cada personaje.
+
+## 3. Historias de usuario
+* HU1.
+Yo, como televidente de la serie
+Quiero poder ver una página de inicio llamativa, alusiva a la serie y con una reseña de la página.
+Para entender de qué se trata la página.
+
+* HU2.
+Yo, como televidente
+Quiero visualizar todos los personajes de la serie en tarjetas con su nombre, especie, género y estatus, al presionar el botón "Personajes"
+Para ver las características de todos los personajes.
+
+* HU3.
+Yo, como televidente
+Quiero visualizar todos los personajes de la serie en orden alfabético por su nombre, al presionar los botones "Ver de A-Z" o “Ver de Z-A”
+Para encontrar más fácilmente el personaje que me interesa ver por su nombre.
+
+* HU4.
+Yo, como fan de la serie
+Quiero visualizar los personajes ordenados por género
+Para encontrar más fácilmente el personaje por género que me interesa ver.
+
+* HU5.
+Yo, como fan de la serie
+Quiero visualizar los personajes ordenados por Estatus
+Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
+
+## 4. Diseño de la Interfaz de Usuario
+* Prototipo de baja fidelidad
+
+* Prototipo de alta fidelidad
+
+* Testeos de usabilidad
+
+## 5. Diseño final del producto
+
+## 7. Pruebas unitarias
+
+## 9. Checklist
+
+
+
+
+
+
+
+
+
+
+
+
 # Data Lovers
 
 ## Índice

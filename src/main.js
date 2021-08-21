@@ -81,7 +81,7 @@ function verPersonajes(personajes) {
   contenedorResultados.innerHTML = "";
   for (let i = 0; i < personajes.length; i++) {
     /* let personaje = personajes[i]*/
-    let nombre = personajes[i].name;
+    /*let nombre = personajes[i].name;*/
     let especie = personajes[i].species;
     let imag = personajes[i].image;
     let estatus = personajes[i].status;
@@ -100,7 +100,7 @@ function verPersonajes(personajes) {
 
     let titulo = document.createElement("h2")
     titulo.setAttribute("class", "estiloTitulo")
-    titulo.innerText = nombre
+    /*titulo.innerText = nombre*/
     tarjeta.appendChild(titulo)
 
 
