@@ -42,14 +42,15 @@ Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
 
 Prototipo Mobile:
 
-<img src="prototipo mobile 1](https://user-images.githubusercontent.com/84931595/130502741-69947462-e821-41ca-8fcf-287000700b3f.png">
+<img src="https://user-images.githubusercontent.com/84931595/130502741-69947462-e821-41ca-8fcf-287000700b3f.png">
 
-<img src="prototipo mobile 2](https://user-images.githubusercontent.com/84931595/130502452-b846771c-59ac-4fc3-8488-6483b8a1214c.png">
+<img src="https://user-images.githubusercontent.com/84931595/130502452-b846771c-59ac-4fc3-8488-6483b8a1214c.png">
 
 Prototipo Desktop:
-<img src="prototipo desktop 1](https://user-images.githubusercontent.com/84931595/130502655-20c541d3-ebf5-4c84-9b0f-3bd2fecf619b.png">
 
-<img src="prototipo desktop 2](https://user-images.githubusercontent.com/84931595/130502519-841bc16d-8c53-4cef-836d-69c95ec2950f.png">
+<img src="https://user-images.githubusercontent.com/84931595/130502655-20c541d3-ebf5-4c84-9b0f-3bd2fecf619b.png">
+
+<img src="https://user-images.githubusercontent.com/84931595/130502519-841bc16d-8c53-4cef-836d-69c95ec2950f.png">
 
 * ### Testeos de usabilidad
 
