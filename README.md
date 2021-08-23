@@ -40,14 +40,30 @@ Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
 
 * ### Prototipo de alta fidelidad
 
-<img src="https://user-images.githubusercontent.com/84931595/130496400-f165775b-1132-4e4b-bccb-76d3e4027e2f.png">
-<img src="https://user-images.githubusercontent.com/84931595/130500275-23001eaf-1b0e-45eb-a7c9-d71bf08ec605.png">
+Prototipo Mobile:
+
+<img src="prototipo mobile 1](https://user-images.githubusercontent.com/84931595/130502741-69947462-e821-41ca-8fcf-287000700b3f.png">
+
+<img src="prototipo mobile 2](https://user-images.githubusercontent.com/84931595/130502452-b846771c-59ac-4fc3-8488-6483b8a1214c.png">
+
+Prototipo Desktop:
+<img src="prototipo desktop 1](https://user-images.githubusercontent.com/84931595/130502655-20c541d3-ebf5-4c84-9b0f-3bd2fecf619b.png">
+
+<img src="prototipo desktop 2](https://user-images.githubusercontent.com/84931595/130502519-841bc16d-8c53-4cef-836d-69c95ec2950f.png">
 
 * ### Testeos de usabilidad
 
+
+
 ## 5. Diseño final del producto
 
+<img src="https://user-images.githubusercontent.com/84931595/130503037-9c860362-5099-4d86-810b-b283738a7f3c.png">
+
+<img src="https://user-images.githubusercontent.com/84931595/130503061-312aed98-296b-41cf-a768-4342b3d3e0d9.png">
+
 ## 7. Pruebas unitarias
+
+<img src="https://user-images.githubusercontent.com/84931595/130503636-84cce534-38f7-400c-a1a0-54d126fdeaed.png">
 
 ## 9. Checklist
 
