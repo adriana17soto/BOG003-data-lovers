@@ -54,7 +54,10 @@ Prototipo Desktop:
 
 * ### Testeos de usabilidad
 
+Después de realizadas las pruebas de usabilidad se observó lo siguiente, y se realizaron los cambios pertinentes:
 
+  * El botón de “Personajes” se encontraba en la parte inferior de la página y era poco visible, debido a esto se ubico en la barra de navegación.
+  * El fondo de la página tenia colores muy llamativos que dificultaban la vista de las letras, se cambió a un color más neutro.
 
 ## 5. Diseño final del producto
 
@@ -67,6 +70,40 @@ Prototipo Desktop:
 <img src="https://user-images.githubusercontent.com/84931595/130503636-84cce534-38f7-400c-a1a0-54d126fdeaed.png">
 
 ## 9. Checklist
+
+* [X] Usa VanillaJS.
+* [ ] Pasa linter (`npm run pretest`)
+* [X] Pasa tests (`npm test`)
+* [X] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
+  lines y branches.
+* [X] Incluye _Definición del producto_ clara e informativa en `README.md`.
+* [X] Incluye historias de usuario en `README.md`.
+* [X] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
+  `README.md`.
+* [X] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
+  en `README.md`.
+* [ ] Incluye link a Zeplin en `README.md`.
+* [X] Incluye el listado de problemas que detectaste a través de tests de
+  usabilidad en el `README.md`.
+* [] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [X] UI: Permite ordenar data por uno o más campos (asc y desc).
+* [X] UI: Permite filtrar data en base a una condición.
+* [X] UI: Es _responsive_.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
