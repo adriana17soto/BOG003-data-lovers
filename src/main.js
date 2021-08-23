@@ -1,13 +1,13 @@
 //import { example } from './data.js';
 // import data from './data/lol/lol.js';
 //import data from './data/pokemon/pokemon.js';
-import data from './data/rickandmorty/rickandmorty.js';
+import data from "./data/rickandmorty/rickandmorty.js";
 import { ordenarPersonajes } from "./data.js";
-import { filtrarPersonajes } from "./data.js";
+import { filtroEspecies } from "./data.js";
 import { filtroGenero } from "./data.js";
 import { filtroStatus } from "./data.js";
 
-
+//********Muestra la página de bienvenida y oculta la 2da vista */
 
 document.getElementById("contenedor").style.display = "block";
 document.getElementById("pagPrincipal").style.display = "block";
@@ -22,6 +22,7 @@ document.getElementById("contenedorResultados").style.display = "none";
 document.getElementById("generoPers").style.display = "none";
 document.getElementById("statusPers").style.display = "none";
 
+//********Muestra la 2da vista  y oculta la página de bienvenida  */
 
 let btnPers = document.getElementById("btnPers");
 const mostrarpantalla = () => {
@@ -39,218 +40,119 @@ const mostrarpantalla = () => {
   document.getElementById("contenedorResultados").style.display = "flex";
   document.getElementById("generoPers").style.display = "inline-flex";
   document.getElementById("statusPers").style.display = "inline-flex";
-}
+};
 
 btnPers.addEventListener("click", mostrarpantalla);
 
-
+//******** Vuelve a cargar la página y Muestra la página de bienvenida */
 document.getElementById("btnRegresar").addEventListener("click", () => {
   location.reload();
-
 });
-/*let btnRegresar = document.getElementById("btnRegresar");
-const mostrarpantalla1 = () =>{
-document.getElementById("contenedor").style.display = "block";
-document.getElementById("pagPrincipal").style.display = "block";
-document.getElementById("botones").style.display = "block";
-document.getElementById("btnRegresar").style.display = "none";
-document.getElementById("ordenarAlfab").style.display = "none";
-document.getElementById("ordenarAlfabZ").style.display = "none";
-document.getElementById("contenedorResultados").style.display = "none";
-/*document.getElementById("buscar").style.display = "none";*/
-/*document.getElementById("filtrarEspecies").style.display = "none";
-}
-btnRegresar.addEventListener("click", mostrarpantalla1);*/
 
-
-/*location.reload();*/
-
-
-const personajes = data.results
-const botonPersonajes = document.getElementById("btnPers");
-botonPersonajes.addEventListener("click", () => {
-  /*console.log("tocandoBotonPersonajes")*/
-  verPersonajes(data.results)
-})
-
-
+//***** Se Trae la data y se crean las tarjetas con los personajes *******
+const personajes = data.results;
 function verPersonajes(personajes) {
   /*console.log(personajes)*/
   const contenedorResultados = document.getElementById("contenedorResultados");
-  /*document.getElementById("contenedorResultados").style.display = "block";*/
   contenedorResultados.innerHTML = "";
   for (let i = 0; i < personajes.length; i++) {
     /* let personaje = personajes[i]*/
-    /*let nombre = personajes[i].name;*/
+    let nombre = personajes[i].name;
     let especie = personajes[i].species;
     let imag = personajes[i].image;
     let estatus = personajes[i].status;
     let genero = personajes[i].gender;
 
-    /*console.log(nombre)
-    console.log(especie)
-    console.log(imag)*/
-
-    let tarjeta = document.createElement("div")
-    tarjeta.setAttribute("class", "tarjetaPersonajes")
+    let tarjeta = document.createElement("div");
+    tarjeta.setAttribute("class", "tarjetaPersonajes");
     contenedorResultados.appendChild(tarjeta);
 
     /*let tex1 = document.createTextNode("Personaje:");
     tarjeta.appendChild(tex1)*/
 
-    let titulo = document.createElement("h2")
-    titulo.setAttribute("class", "estiloTitulo")
-    /*titulo.innerText = nombre*/
-    tarjeta.appendChild(titulo)
+    let titulo = document.createElement("h2");
+    titulo.setAttribute("class", "estiloTitulo");
+    titulo.innerText = nombre;
+    tarjeta.appendChild(titulo);
 
-
-    let foto = document.createElement("img")
-    foto.setAttribute("class", "estiloImg")
-    foto.src = imag
-    tarjeta.appendChild(foto)
-
+    let foto = document.createElement("img");
+    foto.setAttribute("class", "estiloImg");
+    foto.src = imag;
+    tarjeta.appendChild(foto);
 
     /*let tex2 = document.createTextNode("Especie:")
     tarjeta.appendChild(tex2)
     tarjeta.insertBefore(tex2,esp);*/
 
     let esp = document.createElement("h4");
-    esp.setAttribute("class", "estiloEsp")
+    esp.setAttribute("class", "estiloEsp");
     esp.innerText = "Specie: " + especie;
     /*esp.innerHTML = especie*/
-    tarjeta.appendChild(esp)
+    tarjeta.appendChild(esp);
 
     let gen = document.createElement("h4");
-    gen.setAttribute("class", "estiloGen")
+    gen.setAttribute("class", "estiloGen");
     gen.innerText = "Gender: " + genero;
     /*esp.innerHTML = especie*/
-    tarjeta.appendChild(gen)
+    tarjeta.appendChild(gen);
 
     let est = document.createElement("h4");
-    est.setAttribute("class", "estiloEst")
+    est.setAttribute("class", "estiloEst");
     est.innerText = "Status: " + estatus;
     /*esp.innerHTML = especie*/
-    tarjeta.appendChild(est)
+    tarjeta.appendChild(est);
 
     /*let tex2 = document.createTextNode("Especie: ")
     /*tarjeta.appendChild(tex2)*/
     /*tarjeta.insertBefore(tex2,esp);*/
-
-
-    contenedorResultados.appendChild(tarjeta)
-    /*console.log(tarjeta)*/
-    /*console.log(contenedorResultados)*/
-
   }
 }
+//********Muestra la 2da vista al precionar el botón Personajes  */
+const botonPersonajes = document.getElementById("btnPers");
+botonPersonajes.addEventListener("click", () => {
+  verPersonajes(personajes);
+});
 
-/*-----Ordenar alfabeticamente ----*/
-
-const pers = data.results
+//******Ordena alfabeticamente de la A-Z  ******/
 const ordenarPersAlf = document.getElementById("ordenarAlfab");
 ordenarPersAlf.addEventListener("click", () => {
-  const personajesOrdenados = ordenarPersonajes(pers)
-  verPersonajes(personajesOrdenados)
+  const personajesOrdenados = ordenarPersonajes(personajes);
+  verPersonajes(personajesOrdenados);
   /*console.log(personajesOrdenados);*/
-})
+});
+
+//******Ordena alfabeticamente de la Z-A  ******/
 const ordenarPersAlfz = document.getElementById("ordenarAlfabZ");
 ordenarPersAlfz.addEventListener("click", () => {
-  const personajesOrdenados = ordenarPersonajes(pers)
-  const reverse = personajesOrdenados.reverse()
-  verPersonajes(reverse)
+  const personajesOrdenados = ordenarPersonajes(personajes);
+  const reverse = personajesOrdenados.reverse();
+  verPersonajes(reverse);
   /*console.log(reverse);*/
-})
-
-/*-----Filtrar por Especies ----*/
-
-/*verPersonajes(data.results);
-
-const filtrar = document.getElementById("filtrarEspecies");
-filtrar.addEventListener("change", (event) => {
-  const filtrarPorEsp = filtrarPersonajes(data.results, event.target.value);
-  if (event.target.value == "all") {
-    verPersonajes(data.results);
-  } else {
-    verPersonajes(filtrarPorEsp);
-  }
-});*/
-
+});
+//********* Filtra por Especie  *********/
 function organizarEspecie(e) {
-  let opcion = e.target.value;
-  verPersonajes(filtrarPersonajes(opcion, personajes))
-  if (e.target.value == 'all')
-    verPersonajes(data.results);
+  let opcEspecie = e.target.value;
+  verPersonajes(filtroEspecies(opcEspecie, personajes));
+  if (opcEspecie == "all") verPersonajes(personajes);
 }
-
 let botonEspecie = document.getElementById("filtrarEspecies");
 botonEspecie.addEventListener("change", organizarEspecie);
 
-/*-----Filtrar por Genero ----*/
-
+//********* Filtra por Genero  *********/
 function organizarGenero(e) {
-  let opcion = e.target.value;
-  verPersonajes(filtroGenero(opcion, personajes))
-  if (e.target.value == 'todosGeneros')
-    verPersonajes(data.results);
+  let opcGenero = e.target.value;
+  verPersonajes(filtroGenero(opcGenero, personajes));
+  if (opcGenero == "todosGeneros") verPersonajes(personajes);
 }
-
 let botonGenero = document.getElementById("generoPers");
 botonGenero.addEventListener("change", organizarGenero);
 
-/*-----Filtrar por status ----*/
-
+//********* Filtra por Estatus  *********/
 function status(e) {
-  let statusopc = e.target.value;
-  verPersonajes(filtroStatus(statusopc, data.results))
-  if (e.target.value == 'todosEstatus')
-    verPersonajes(data.results);
+  let opcEstatus = e.target.value;
+  verPersonajes(filtroStatus(opcEstatus, personajes));
+  if (opcEstatus == "todosEstatus") verPersonajes(personajes);
 }
-
 let btnStatus = document.getElementById("statusPers");
 btnStatus.addEventListener("change", status);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const botonPersonajes1 = document.getElementById("btnEpis");
-botonPersonajes1.addEventListener("click", () => recorrePersonajes1())
-
-const personajes1 = data.results
-function recorrePersonajes1() {
-  const contenedorResultados1 = document.getElementById("contenedorResultados1")
-  for (let i = 0; i < personajes.length; i++) {
-    let personaje1 = personajes1[i]
-    let episodios = personajes1[i].episode
-
-
-    console.log(episodios)
-    let tarjeta1 = document.createElement("div")
-    tarjeta1.setAttribute("class", "tarjetaPersonajes")
-
-
-    let titulo1 = document.createElement("img")
-    titulo1.src = episodios
-
-
-    titulo1.innerText = episodios
-    tarjeta1.appendChild(titulo1)
-    contenedorResultados.appendChild(tarjeta1)
-  }*/

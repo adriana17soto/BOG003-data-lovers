@@ -2,6 +2,7 @@
   "name": "data-lovers",
   "version": "1.0.0",
   "main": "src/index.html",
+  "homepage": "https://adriana17soto.github.io/BOG003-data-lovers/",
   "license": "MIT",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",

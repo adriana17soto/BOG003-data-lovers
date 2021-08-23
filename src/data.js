@@ -1,4 +1,4 @@
-
+//***** Ordena los personajes de A-Z *******
 export function ordenarPersonajes(personajes) {
   personajes.sort((a, b) => {
 
@@ -12,55 +12,21 @@ export function ordenarPersonajes(personajes) {
   })
   return personajes;
 }
-
-
-
-/* export const filtrarPersonajes = (data, condition) => {
-   let dataFiltrada = [];
-   data.filter((item) => {
-     if (condition == item.species) {
-       dataFiltrada.push(item);
-     }
-   });
-   return filtrarPersonajes;
- }*/
-
-/*export function filtrarPersonajes(especie, personajes) {
-  let filtroE = personajes.filter((item) => item.species === especie);
-  console.log(especie)
- return filtroE
-
- }*/
-
-/*export const filtrarPersonajes = (personajes, Specie) => {
- if (Specie === "Species") {
-   return filtrarPersonajes;
- } else {
-   personajes = personajes.filter((Character) => Character.species === Specie)
- return personajes;
- }
-};*/
-
-
-
-export function filtrarPersonajes(especie, personajes)  { 
-  let filtroE = personajes.filter((item) => item.species === especie);
+//***** Filtra los personajes por Especie *******
+export function filtroEspecies(especie, personajes)  { 
+  let filtrarEs = personajes.filter((pers) => pers.species === especie);
   // console.log(especie)
-  return filtroE;
+  return filtrarEs;
 }
-
-
-
-
+//***** Filtra los personajes por Genero *******
 export function filtroGenero(genero, personajes) {
-  let filtroG = personajes.filter((item) => item.gender === genero);
+  let filtrarGe = personajes.filter((pers) => pers.gender === genero);
   /*console.log(filtroG)*/
-  return filtroG
+  return filtrarGe
 }
-
-
-export function filtroStatus(status, data) {
-  let filtroS = data.filter((item) => item.status === status);
+//***** Filtra los personajes por Estatus *******
+export function filtroStatus(status, personajes) {
+  let filtrarSt = personajes.filter((pers) => pers.status === status);
   /*console.log(filtroS)*/
- return filtroS
+ return filtrarSt
 }

@@ -21,16 +21,12 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });*/
 
-
-
-
-
 const personajesPrueba =[{ "name": "Rick Sanchez" }, {"name": "Summer Smith"}, {"name": "Beth Smith"}, {"name": "Evil Morty"}]; 
 const personajesPrueba2 =[{ "name": "Rick Sanchez" }, { "name": "Rick Sanchez" }, {"name": "Summer Smith"}, {"name": "Beth Smith"}, {"name": "Evil Morty"}]; 
 const personajesAZ =[{"name": "Beth Smith"}, {"name": "Evil Morty"}, {"name": "Rick Sanchez"}, {"name": "Summer Smith"}];  
 const personajesAZ2 =[{"name": "Beth Smith"}, {"name": "Evil Morty"}, {"name": "Rick Sanchez"},{"name": "Rick Sanchez"}, {"name": "Summer Smith"}];  
 
-import { filtrarPersonajes, ordenarPersonajes, filtroGenero, filtroStatus } from '../src/data.js';
+import { filtroEspecies, ordenarPersonajes, filtroGenero, filtroStatus } from '../src/data.js';
 import data from '../src/data/rickandmorty/rickandmorty.js';
 
 
@@ -47,13 +43,13 @@ describe('ordenarPersonajes es una función', () => {
   })
 });
 
-describe('filtrarPersonajes es una función', () => {
+describe('filtroEspecies es una función', () => {
   it('is a function', () => {
-    expect(typeof filtrarPersonajes).toBe('function');
+    expect(typeof filtroEspecies).toBe('function');
   });
 
-  it('cuando busquemos Parasite nos retorne 1 personajes', () => {
-    expect(filtrarPersonajes("Parasite", data.results)).toHaveLength(1);
+  it('cuando seleccionemos filtroEspecies nos organice los personajes por especie', () => {
+    expect(filtroEspecies("Parasite", data.results)).toHaveLength(1);
   });
 });
 

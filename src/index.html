@@ -16,12 +16,13 @@
     <div class="nav">
       <img id="rym" src="img/logodeRyM.png" alt="Logo" />
       <h1>RICK Y MORTY</h1>
+       <!----******* Boton para ver los personajes en la 2da vista *******---->
       <button id="btnPers" type="button">VER PERSONAJES</button>
+       <!----******* Boton para regresar a la 1era vista********---->
       <img src="img/flecha.png"  id="btnRegresar" class="regresar" alt="flecha" />
-     <!-- <button id="btnRegresar" class="regresar" type="button" >Regresar</button>-->
     </div>
     <div>
-      
+   <!----******* Pantalla de Bienvenida ******---->  
     </div>
   </header>
   <div id="pagPrincipal">
@@ -44,18 +45,14 @@
     </main>
   </div>
   <section id="botones">
-      <br>
-      <div>
-        <!--<button id="btnPers" type="button">PERSONAJES</button>-->
-        <br>
-      </div>
-      <div>
+        <div>
+         <!----****** Boton para ordenar de A-Z y de Z-A ******---->
         <button id="ordenarAlfab" class="a-z" type="button">Ver de A-Z</button>
         <button id="ordenarAlfabZ" class="z-a" type="button">Ver de Z-A</button>
       </div>
         <div>
           <br>
-       <!--- <button id="espec" class="especies" type="button">Ver por especie</button>-->
+       <!----****** Boton desplegable  para filtrar por especie ********---->
         <select name="especie" class="especie" id="filtrarEspecies">
           <option value="all">Especies</option>
           <option value="Human">Human</option>
@@ -71,14 +68,14 @@
           <option value="Parasite">Parasite</option>
           <option value="unknown">unknown</option>
         </select>
-
+        <!----******* Boton desplegable  para filtrar por genero *******---->
         <select name="genero" id="generoPers" class="genero">
           <option value="todosGeneros">Genero</option>
           <option>Male</option>
           <option>Female</option>
           <option>unknown</option>
         </select>
-      
+        <!----******* Boton desplegable  para filtrar por estatus *******---->
         <select name="status" id="statusPers" class="status">
         <option value="todosEstatus">Status</option>  
         <option>Alive</option>
@@ -86,24 +83,12 @@
         <option>unknown</option>
       </select>
     </div>
-    <br>
-    <div>
        <!-- <button id="btnRegresar" class="regresar" type="button" >Regresar</button>-->
        <!--- <input type="text" id="busqueda" class="form-busqueda">
         <button class="btn-buscar" id="buscar">Buscar</button>-->
-        <br>
-        <br>
-      </div>
     </section>
-  <br>
+   <!----******* Contenedor principal de las tarjetas con los personajes *******---->
   <div id="contenedorResultados"></div>
-  <div id="contenedorResultados1"></div>
-  <div class=""></div>
-  <div class=""></div>
-
-  <div id="cardPers"></div>
-
-  
   <script src="main.js" type="module"></script>
 </body>
 

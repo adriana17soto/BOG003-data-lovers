@@ -38,7 +38,7 @@ Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
 ## 4. Diseño de la Interfaz de Usuario
 * ### Prototipo de baja fidelidad
 
-*  ### Prototipo de alta fidelidad
+* ### Prototipo de alta fidelidad
 
 * ### Testeos de usabilidad
 
