@@ -85,7 +85,7 @@ Después de realizadas las pruebas de usabilidad se observó lo siguiente, y se 
 * [ ] Incluye link a Zeplin en `README.md`.
 * [X] Incluye el listado de problemas que detectaste a través de tests de
   usabilidad en el `README.md`.
-* [] UI: Muestra lista y/o tabla con datos y/o indicadores.
+* [X] UI: Muestra lista y/o tabla con datos y/o indicadores.
 * [X] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [X] UI: Permite filtrar data en base a una condición.
 * [X] UI: Es _responsive_.
