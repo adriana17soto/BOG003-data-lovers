@@ -40,6 +40,9 @@ Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
 
 *  ### Prototipo de alta fidelidad
 
+<img src="https://user-images.githubusercontent.com/84931595/130496400-f165775b-1132-4e4b-bccb-76d3e4027e2f.png)">
+
+
 * ### Testeos de usabilidad
 
 ## 5. Diseño final del producto
