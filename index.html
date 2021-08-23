@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Lovers</title>
+  <link rel="icon" href="img/logodeRyM.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Hanalei+Fill&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="contenedor">
+    <div class="nav">
+      <img id="rym" src="img/logodeRyM.png" alt="Logo" />
+      <h1>RICK Y MORTY</h1>
+       <!----******* Boton para ver los personajes en la 2da vista *******---->
+      <button id="btnPers" type="button">VER PERSONAJES</button>
+       <!----******* Boton para regresar a la 1era vista********---->
+      <img src="img/flecha.png"  id="btnRegresar" class="regresar" alt="flecha" />
+    </div>
+    <div>
+   <!----******* Pantalla de Bienvenida ******---->  
+    </div>
+  </header>
+  <div id="pagPrincipal">
+    <div class="cintaBienenvida">
+      <h3>BIENVENIDXS a la página para los más fans de Rick y Morty</h3>
+    </div>
+    <main class="conten">
+      <h2>¡Aquí podras ver y conocer a tus personajes favoritos, y todos los episodios de la serie!</h2>
+      <div class="reseña">
+      <div class="subConten">
+        <h3><b>¿De qué se trata la serie?</b></h3>
+        <p>
+          Rick y Morty es una serie de televisión estadounidense de animación para adultos creada por Justin Roiland y
+          Dan Harmon. La serie sigue las aventuras de un científico, Rick, y su inocente nieto Morty, quienes pasan el
+          tiempo entre la rutina de una típica familia y las aventuras intergalácticas.
+        </p>
+      </div>
+      <img src="img/imgRick.png" alt="imagen" id="imgRick" />
+    </div>
+    </main>
+  </div>
+  <section id="botones">
+        <div>
+         <!----****** Boton para ordenar de A-Z y de Z-A ******---->
+        <button id="ordenarAlfab" class="a-z" type="button">Ver de A-Z</button>
+        <button id="ordenarAlfabZ" class="z-a" type="button">Ver de Z-A</button>
+      </div>
+        <div>
+          <br>
+       <!----****** Boton desplegable  para filtrar por especie ********---->
+        <select name="especie" class="especie" id="filtrarEspecies">
+          <option value="all">Especies</option>
+          <option value="Human">Human</option>
+          <option value="Alien">Alien</option>
+          <option value="Humanoid">Humanoid</option>
+          <option value="Poopybutthole">Poopybutthole</option>
+          <option value="Mytholog">Mytholog</option>
+          <option value="Animal">Animal</option>
+          <option value="Vampire">Vampire</option>
+          <option value="Robot">Robot</option>
+          <option value="Cronenberg">Cronenberg</option>
+          <option value="Disease">Disease</option>
+          <option value="Parasite">Parasite</option>
+          <option value="unknown">unknown</option>
+        </select>
+        <!----******* Boton desplegable  para filtrar por genero *******---->
+        <select name="genero" id="generoPers" class="genero">
+          <option value="todosGeneros">Genero</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>unknown</option>
+        </select>
+        <!----******* Boton desplegable  para filtrar por estatus *******---->
+        <select name="status" id="statusPers" class="status">
+        <option value="todosEstatus">Status</option>  
+        <option>Alive</option>
+        <option>Dead</option>
+        <option>unknown</option>
+      </select>
+    </div>
+       <!-- <button id="btnRegresar" class="regresar" type="button" >Regresar</button>-->
+       <!--- <input type="text" id="busqueda" class="form-busqueda">
+        <button class="btn-buscar" id="buscar">Buscar</button>-->
+    </section>
+   <!----******* Contenedor principal de las tarjetas con los personajes *******---->
+  <div id="contenedorResultados"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>

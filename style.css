@@ -1,0 +1,326 @@
+::after,
+::before{
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+background-color: rgba(128, 128, 128, 0.425);
+margin: 0px;
+}
+
+#contenedor{
+  background: #000;
+  display: inline-flex;
+ /* margin: auto;*/
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+  height: 2%;
+
+}
+.nav{
+  text-align: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 0,1%;
+margin: 0px;
+}
+
+#rym {
+width: 12%; 
+padding: 15px;
+
+}
+
+ 
+#busqueda {
+    width: 15%; 
+    margin: 3px 10px 10px 850px;
+    position: absolute;
+    font-size: 16px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    flex-shrink: 3; 
+ }
+
+ h1 {
+  color: rgb(0, 247, 255); 
+  font-family: 'Creepster', cursive;
+  font-size: 450%;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 0.01px black;
+  text-shadow: -2px -2px 1px rgb(180, 201, 63), 2px 2px 1px rgb(180, 201, 63), -2px 2px 1px rgb(180, 201, 63), 2px -2px 1px rgb(180, 201, 63);
+}
+
+/*#pagPrincipal {
+  display: flex;
+   /* background: rgb(0, 255, 106);
+    color:000000;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;*/
+    
+
+    .cintaBienenvida{
+      background: rgb(0, 255, 8);
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      height: 10%;
+     /* max-width: 1280px;*/
+      flex-shrink: 3;
+    }
+    .conten h2 {
+      font-size: 30px; 
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       flex-shrink: 3;
+    }
+    .reseña{
+      background: rgba(87, 86, 86, 0.213);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 2%;
+     /* padding: 20px;*/
+      border-radius: 20px;
+      padding: 10px 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.404);
+      
+  
+    }
+    .subConten {
+      /*background: rgba(255, 255, 255, 0.385);*/
+      flex-direction: column;
+      margin: 2%;
+      display: flex;
+      text-align: center;
+      width: 50%;
+      font-size: 23px; 
+     min-width: 600px;
+     }
+  .subConten p {
+    display: flex;
+    font-size: 20px;
+  
+    /*width: 50%;*/
+  }
+    #imgRick {
+    width: 40%; 
+    display: flex;
+    border-radius: 10px;
+   
+     }
+  #botones{
+    /*background: chartreuse;*/
+    text-align: center;
+    display: inline;
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;*/
+  }
+  
+  #btnPers{
+    background: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem 0 rgb(0, 247, 255);
+    flex-shrink: 3;
+    justify-content: flex-end;
+  }
+ 
+  
+/*#btnEpis{
+    background: #000;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 80px 10px 10px 700px;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 yellow;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}*/
+#filtrarEspecies{
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding:  10px;
+  cursor: pointer;
+}
+
+
+.regresar{
+  display: inline;
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 30%;
+  width: 3%; 
+  padding: 5px;
+  
+  /*box-shadow: 0 0.8rem 1.4rem 0 rgb(0, 247, 255);
+  flex-shrink: 3;*/
+  /*border-color:rgb(0, 247, 255);*/
+   /* box-shadow: 0 0.5rem 1rem 0.1rem rgb(0, 247, 255);*/
+}
+
+.genero{
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+.status{
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+.a-z{
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+  /*box-shadow: 0 0.8rem 1.4rem 0 rgb(0, 247, 255);
+  flex-shrink: 3;*/
+}
+.z-a{
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px;
+  cursor: pointer;
+  /*box-shadow: 0 0.8rem 1.4rem 0 rgb(0, 247, 255);
+  flex-shrink: 3;*/
+}
+.especies{
+  background: black;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 1% 1%;
+  cursor: pointer;
+  /*box-shadow: 0 0.8rem 1.4rem 0 rgb(0, 247, 255);
+  flex-shrink: 3;*/
+}
+
+option{
+  background-color: rgb(245, 238, 55);
+  color: #000;
+  font-weight: bold;
+}
+#busqueda {
+
+  width: 15%; 
+  background-color: rgba(255, 255, 255, 0.726);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 1% 1%;
+  /*border-radius: 10px;*/
+  cursor: pointer;
+ /* box-shadow: 0 0.8rem 1.4rem 0 rgb(0, 247, 255);
+  flex-shrink: 3;*/
+}
+#contenedorResultados{
+  /*background-color: blueviolet;*/
+  margin: auto;
+  /*max-width: 1280px;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.estiloImg{
+  width: 50%;
+  border: thin solid #000;
+}
+.estiloTitulo{
+   color: rgb(18, 0, 61);
+}
+.estiloEsp{
+  margin: 5px 1px 5px 1px;
+  font-size: 15px;
+
+}
+.estiloGen{
+  margin: 5px 1px 5px 1px;
+  font-size: 15px;
+
+}
+.estiloEst{
+  margin: 5px 1px 5px 1px;
+  font-size: 15px;
+ 
+}
+
+
+
+.tarjetaPersonajes{
+  background: rgb(83, 214, 214);
+  border-radius: 5px;
+  border: medium solid #000;
+  flex: 0 0 100%;
+  margin: 5px 1px 5px 1px;
+  padding: 5px 1px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+@media (min-width: 576px){
+  .tarjetaPersonajes{
+    flex: 0 0 50%;
+
+   }
+  }
+   @media (min-width: 648px){
+  .tarjetaPersonajes{
+    flex: 0 0 25%;
+   }
+  }
+  @media (min-width: 768px){
+    .tarjetaPersonajes{
+      flex: 0 0 22%;
+     }
+    }
+    @media (min-width: 992px){
+      .tarjetaPersonajes{
+        flex: 0 0 18%;
+       }
+      }
+      @media (min-width: 1200px){
+        .tarjetaPersonajes{
+          flex: 0 0 15%;
+         }
+        }
