@@ -1,6 +1,6 @@
 # RICK Y MORTY
 
-<img src"https://user-images.githubusercontent.com/84931595/130617640-9306a9a7-8008-4405-8b85-99a826be4f9b.png">
+<img src="https://user-images.githubusercontent.com/84931595/130617640-9306a9a7-8008-4405-8b85-99a826be4f9b.png">
 
 
 ## 1. Definición del producto
@@ -41,10 +41,10 @@ Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
 ## 4. Diseño de la Interfaz de Usuario
 * ### Prototipo de baja fidelidad
 
-* ### Prototipo de alta fidelidad
 <img src="https://user-images.githubusercontent.com/84931595/130617773-b61d3581-dd4e-45b0-b5ec-fb5ca53c5d14.jpeg">
 <img src="https://user-images.githubusercontent.com/84931595/130617788-1144c882-e150-4210-8960-f6c8101f9a60.jpeg">
 
+* ### Prototipo de alta fidelidad
 
 Prototipo Mobile:
 
