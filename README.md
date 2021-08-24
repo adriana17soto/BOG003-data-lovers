@@ -1,5 +1,8 @@
 # RICK Y MORTY
 
+<img src"https://user-images.githubusercontent.com/84931595/130617640-9306a9a7-8008-4405-8b85-99a826be4f9b.png">
+
+
 ## 1. Definición del producto
 
 Esta página web está diseñada principalmente para el fandom de la serie de televisión estadounidense de animación para adultos Rick and Morty. Los usuarios cuentan con una página responsive, de fácil interacción; en ella se podrán ver todos los personajes de la serie con sus respectivas características, ordenarlos por nombre de forma ascendente y descendente; así como interactuar filtrándolos según la especie, el género y el estatus. 
@@ -39,6 +42,9 @@ Para encontrar más fácilmente el personaje por Estatus que me interesa ver.
 * ### Prototipo de baja fidelidad
 
 * ### Prototipo de alta fidelidad
+<img src="https://user-images.githubusercontent.com/84931595/130617773-b61d3581-dd4e-45b0-b5ec-fb5ca53c5d14.jpeg">
+<img src="https://user-images.githubusercontent.com/84931595/130617788-1144c882-e150-4210-8960-f6c8101f9a60.jpeg">
+
 
 Prototipo Mobile:
 
@@ -72,7 +78,7 @@ Después de realizadas las pruebas de usabilidad se observó lo siguiente, y se 
 ## 9. Checklist
 
 * [X] Usa VanillaJS.
-* [ ] Pasa linter (`npm run pretest`)
+* [X] Pasa linter (`npm run pretest`)
 * [X] Pasa tests (`npm test`)
 * [X] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
   lines y branches.
